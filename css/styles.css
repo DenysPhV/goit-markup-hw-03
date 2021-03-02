@@ -1,0 +1,236 @@
+:root {
+    --white-color: #ffffff;
+    --black-color: #000000;
+    --accent-primary: #2196f3;
+    --accent-secondary: #188ce8;
+    --background-dark: #2f303a;
+    --light-gray: #f5f4fa;
+    --color-conten: #212121;
+    --main-text: #757575;
+    --rgba-link: rgba(255, 255, 255, 0.6);
+} 
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: var(--main-text);
+  letter-spacing: 0.03em;
+}
+
+.link-nonstyle {
+  text-decoration: none;
+}
+
+.list-nonstyle {
+  list-style: none;
+}
+
+
+/* =========== COMPONENTS =========== */
+
+
+
+/* =========== END COMPONENTS =========== */
+
+/* =========== HEADER ===========  */
+.logo {
+  color: var(--black-color);
+
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+.logo-decor {
+    color: var(--accent-primary);
+}
+
+.logo-dark {
+  color: var(--black-color);
+}
+
+.logo-light {
+  color: var(--white-color);
+} 
+
+.navigation-link {
+  color: var(--color-conten);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.navigation-link:hover,
+.navigation-link:focus {
+  color: var(--accent-primary);
+}
+
+.contact-header {
+  color: var(--main-text);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  
+}
+
+.contact-header:hover,
+.contact-header:focus {
+  color: var(--accent-primary);
+}
+
+.active-link {
+  color: var(--accent-primary);
+}
+/* =========== END HEADER ===========  */
+
+/* =========== HERO SECTION =========== */
+.hero {
+  background-color: var(--background-dark);
+}
+
+.hero-title {
+  color: var(--white-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+  
+}
+.btn-hero {
+  background-color: var(--accent-primary);
+  color: var(--white-color);
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  cursor: pointer;
+  
+}
+
+.btn-hero:hover,
+.btn-hero:focus {
+  background-color: var(--accent-secondary);
+  color: var(--white-color);
+}
+
+
+/* =========== END HERO SECTION =========== */
+
+/* ======== ADVANTAGE SECTION ======== */
+.advantage-title {
+  color: var(--color-conten);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.advantage-rubric {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+/* ======== END ADVANTAGE SECTION ======== */
+
+/* ============ PASSION SECTION ============ */
+.passion-title {
+  color: var(--color-conten);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  
+}
+/* ============ END PASSION SECTION ============ */
+
+/* ======== TEAM SECTION ======== */
+.team {
+  background-color: var(--light-gray);
+}
+.team-title {
+  color: var(--color-conten);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.taem-name {
+  color: var(--color-conten);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+  
+.team-function {
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+/* ======== END TEAM SECTION ======== */
+
+
+/* ============ FOOTER ============= */
+
+.footer {
+  background-color: var(--background-dark);
+}
+
+.address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.footer-address {
+  color: var(--white-color);
+}
+.footer-link {
+  color: var(--rgba-link);
+}
+
+/* ======= PORFOLIO PAGE =============== */
+
+/* ======= PORTFOLIO SECTION ======= */
+.portfolio-title {
+  color:var(--color-conten);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-rubric{
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+.btn-choose {
+  cursor: pointer;
+  background-color: var(--light-gray);
+  color: var(--color-conten);
+}
+
+.btn-choose:hover,
+.btn-choose:focus {
+  background-color: var(--accent);
+  color: var(--white-color);
+}
+  
+
+/* ======= END PORFOLIO SECTION ======= */
