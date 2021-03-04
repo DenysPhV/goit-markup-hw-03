@@ -8,22 +8,41 @@
 /* Цвет основного текста - #757575 */
 /* Цвет ссылок в спокойном состоянии - rgba(255, 255, 255, 0.6)*/
 :root {
-    --white-color: #ffffff;
-    --black-color: #000000;
-    --accent-primary: #2196f3;
-    --accent-secondary: #188ce8;
-    --background-dark: #2f303a;
-    --light-gray: #f5f4fa;
-    --color-conten: #212121;
-    --main-text: #757575;
-    --rgba-link: rgba(255, 255, 255, 0.6);
-} 
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --accent-primary: #2196f3;
+  --accent-secondary: #188ce8;
+  --background-dark: #2f303a;
+  --light-gray: #f5f4fa;
+  --color-conten: #212121;
+  --main-text: #757575;
+  --rgba-link: rgba(255, 255, 255, 0.6);
+}
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   color: var(--main-text);
   letter-spacing: 0.03em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
 }
 
 .link-nonstyle {
@@ -34,24 +53,48 @@ body {
   list-style: none;
 }
 
-
+/* сокрытие заноловка */
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
 /* =========== COMPONENTS =========== */
 
-
-
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 /* =========== END COMPONENTS =========== */
 
 /* =========== HEADER ===========  */
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   color: var(--black-color);
 
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+
+  margin-right: 95px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
+
 .logo-decor {
-    color: var(--accent-primary);
+  color: var(--accent-primary);
 }
 
 .logo-dark {
@@ -60,7 +103,21 @@ body {
 
 .logo-light {
   color: var(--white-color);
-} 
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-list {
+  display: flex;
+  align-items: center;
+}
+
+.navigation-item:not(:last-child) {
+  margin-right: 50px;
+}
 
 .navigation-link {
   color: var(--color-conten);
@@ -83,7 +140,6 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  
 }
 
 .contact-header:hover,
@@ -91,14 +147,26 @@ body {
   color: var(--accent-primary);
 }
 
+.contact-item {
+  margin-right: 50px;
+}
+
+.contact {
+  margin-left: auto;
+}
 .active-link {
   color: var(--accent-primary);
 }
+
 /* =========== END HEADER ===========  */
 
 /* =========== HERO SECTION =========== */
 .hero {
   background-color: var(--background-dark);
+}
+
+.hero .container {
+  text-align: center;
 }
 
 .hero-title {
@@ -110,8 +178,10 @@ body {
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
-  
+
+  padding-top: 200px;
 }
+
 .btn-hero {
   background-color: var(--accent-primary);
   color: var(--white-color);
@@ -123,7 +193,11 @@ body {
   letter-spacing: 0.06em;
 
   cursor: pointer;
-  
+  margin-top: 30px;
+  margin-bottom: 200px;
+  padding: 10px 32px;
+  border-radius: 4px;
+  border-color: none;
 }
 
 .btn-hero:hover,
@@ -131,7 +205,6 @@ body {
   background-color: var(--accent-secondary);
   color: var(--white-color);
 }
-
 
 /* =========== END HERO SECTION =========== */
 
@@ -143,6 +216,8 @@ body {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+
+  margin-bottom: 10px;
 }
 
 .advantage-rubric {
@@ -150,6 +225,13 @@ body {
   font-size: 14px;
   line-height: 1.71;
 }
+
+.advantage-list {
+  display: flex;
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+
 /* ======== END ADVANTAGE SECTION ======== */
 
 /* ============ PASSION SECTION ============ */
@@ -160,7 +242,13 @@ body {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  
+
+  margin: 50px;
+}
+
+.passion-list {
+  display: flex;
+  padding-bottom: 94px;
 }
 /* ============ END PASSION SECTION ============ */
 
@@ -175,6 +263,9 @@ body {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+
+  padding-top: 94px;
+  margin-bottom: 50px;
 }
 
 .taem-name {
@@ -184,14 +275,18 @@ body {
   font-size: 16px;
   line-height: 1.19;
 }
-  
+
 .team-function {
   font-size: 16px;
   line-height: 1.19;
 }
 
-/* ======== END TEAM SECTION ======== */
+.team-list {
+  display: flex;
+  padding-bottom: 94px;
+}
 
+/* ======== END TEAM SECTION ======== */
 
 /* ============ FOOTER ============= */
 
@@ -212,11 +307,28 @@ body {
   color: var(--rgba-link);
 }
 
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 60px;
+}
+
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+/* обратился к ребенку в ссылку с логотипом */
+.container .footer-logo {
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 0px;
+  margin-bottom: 20px;
+}
 /* ======= PORFOLIO PAGE =============== */
 
 /* ======= PORTFOLIO SECTION ======= */
 .portfolio-title {
-  color:var(--color-conten);
+  color: var(--color-conten);
 
   font-weight: 700;
   font-size: 18px;
@@ -224,7 +336,7 @@ body {
   letter-spacing: 0.06em;
 }
 
-.portfolio-rubric{
+.portfolio-rubric {
   font-size: 16px;
   line-height: 1.88;
 }
@@ -237,9 +349,8 @@ body {
 
 .btn-choose:hover,
 .btn-choose:focus {
-  background-color: var(--accent);
+  background-color: var(--accent-primary);
   color: var(--white-color);
 }
-  
 
 /* ======= END PORFOLIO SECTION ======= */
