@@ -64,8 +64,11 @@
     <main class="page">
       <!--PORTFOLIO-->
       <section class="portfolio">
-        <!--<h2>Портфолио и фильтр работ</h2> -->
-        <ul class="list-nonstyle">
+      <!-- Скрытый заголовок -->
+        <div class="container">
+          <h2 class="visually-hidden">Портфолио и фильтр работ</h2>
+        <!-- фильтр -->
+        <ul class="list-nonstyle choose-list">
           <li class="choose-item">
             <button type="button" class="btn-choose">Все</button>
           </li>
@@ -73,7 +76,7 @@
             <button type="button" class="btn-choose">Веб-сайты</button>
           </li>
           <li class="choose-item">
-            <button type="button" class="btn-choosee">Приложения</button>
+            <button type="button" class="btn-choose">Приложения</button>
           </li>
           <li class="choose-item">
             <button type="button" class="btn-choose">Дизайн</button>
@@ -82,8 +85,8 @@
             <button type="button" class="btn-choose">Маркетинг</button>
           </li>
         </ul>
-
-        <ul class="list-nonstyle">
+        <!-- коллекция -->
+        <ul class="list-nonstyle portfolio-list">
           <li class="portfolio-item">
             <img
               src="./images/portfolio/website/tekhnokryak.jpg"
@@ -91,8 +94,11 @@
               width="370"
               height="294"
             />
+            <div class="portfolio-inner">
             <h3 class="portfolio-title">Технокряк</h3>
             <p class="portfolio-rubric">Веб-сайт</p>
+            </div>
+            
           </li>
           <li class="portfolio-item">
             <img
@@ -101,10 +107,12 @@
               width="370"
               height="294"
             />
-            <h3 class="portfolio-title">
+            <div class="portfolio-inner">
+              <h3 class="portfolio-title">
               Постер <span lang="en">Orlean vs Golden Star</span>
             </h3>
             <p class="portfolio-rubric">Дизайн</p>
+            </div>
           </li>
           <li class="portfolio-item">
             <img
@@ -113,10 +121,12 @@
               width="370"
               height="294"
             />
-            <h3 class="portfolio-title">
+            <div class="portfolio-inner">
+              <h3 class="portfolio-title">
               Ресторан <span lang="en">Seafood</span>
             </h3>
             <p class="portfolio-rubric">Приложение</p>
+            </div>
           </li>
           <li class="portfolio-item">
             <img
@@ -125,8 +135,10 @@
               width="370"
               height="294"
             />
-            <h3 class="portfolio-title">Проект <span lang="en">Prime</span></h3>
+            <div class="portfolio-inner">
+              <h3 class="portfolio-title">Проект <span lang="en">Prime</span></h3>
             <p class="portfolio-rubric">Маркетинг</p>
+            </div>
           </li>
           <li class="portfolio-item">
             <img
@@ -135,8 +147,10 @@
               width="370"
               height="294"
             />
-            <h3 class="portfolio-title">Проект <span lang="en">Boxes</span></h3>
+            <div class="portfolio-inner">
+              <h3 class="portfolio-title">Проект <span lang="en">Boxes</span></h3>
             <p class="portfolio-rubric">Приложение</p>
+            </div>   
           </li>
           <li class="portfolio-item">
             <img
@@ -145,10 +159,12 @@
               width="370"
               height="294"
             />
-            <h3 lang="en" class="portfolio-title">
+            <div class="portfolio-inner">
+              <h3 lang="en" class="portfolio-title">
               Inspiration has no Borders
             </h3>
             <p class="portfolio-rubric">Веб-сайт</p>
+            </div>
           </li>
           <li class="portfolio-item">
             <img
@@ -157,10 +173,12 @@
               width="370"
               height="294"
             />
-            <h3 class="portfolio-title">
+            <div class="portfolio-inner">
+              <h3 class="portfolio-title">
               Издание <span lang="en">Limited Edition</span>
             </h3>
             <p class="portfolio-rubric">Дизайн</p>
+            </div>
           </li>
           <li class="portfolio-item">
             <img
@@ -169,10 +187,12 @@
               width="370"
               height="294"
             />
-            <h3 class="portfolio-title">
+            <div class="portfolio-inner">
+              <h3 class="portfolio-title">
               Проект <span lang="en">LAB</span>LAB
             </h3>
             <p class="portfolio-rubric">Маркетинг</p>
+            </div>
           </li>
           <li class="portfolio-item">
             <img
@@ -181,10 +201,14 @@
               width="370"
               height="294"
             />
-            <h3 lang="en" class="portfolio-title">Growing Business</h3>
+            <div class="portfolio-inner">
+              <h3 lang="en" class="portfolio-title">Growing Business</h3>
             <p class="portfolio-rubric">Приложение</p>
+            </div>
+            
           </li>
         </ul>
+        </div>
       </section>
     </main>
     <!--FOOTER-->

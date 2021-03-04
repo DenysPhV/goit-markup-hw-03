@@ -16,6 +16,8 @@
   --light-gray: #f5f4fa;
   --color-conten: #212121;
   --main-text: #757575;
+  --border-color-header: #ececec;
+  --border-color: #eeeeee;
   --rgba-link: rgba(255, 255, 255, 0.6);
 }
 
@@ -75,6 +77,11 @@ img {
 /* =========== END COMPONENTS =========== */
 
 /* =========== HEADER ===========  */
+.header {
+  border-bottom: solid 1px;
+  border-color: var(--border-color-header);
+}
+
 .header .container {
   display: flex;
   align-items: center;
@@ -324,6 +331,7 @@ img {
   padding-bottom: 0px;
   margin-bottom: 20px;
 }
+
 /* ======= PORFOLIO PAGE =============== */
 
 /* ======= PORTFOLIO SECTION ======= */
@@ -334,6 +342,8 @@ img {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
+  margin-bottom: 4px;
 }
 
 .portfolio-rubric {
@@ -341,10 +351,21 @@ img {
   line-height: 1.88;
 }
 
+.portfolio-inner {
+  padding: 20px 24px;
+  border-right: solid 1px;
+  border-bottom: solid 1px;
+  border-left: solid 1px;
+  border-color: var(--border-color);
+}
+/* === FILTER === */
 .btn-choose {
-  cursor: pointer;
-  background-color: var(--light-gray);
   color: var(--color-conten);
+  background-color: var(--light-gray);
+  cursor: pointer;
+
+  padding: 6px 22px;
+  border-radius: 4px;
 }
 
 .btn-choose:hover,
@@ -352,5 +373,30 @@ img {
   background-color: var(--accent-primary);
   color: var(--white-color);
 }
+
+.choose-list {
+  display: flex;
+  justify-content: center;
+  padding-top: 94px;
+  padding-bottom: 50px;
+}
+
+.choose-item:not(:last-child) {
+  margin-right: 8px;
+}
+/* === END FILTER === */
+
+/* ==== COLLECTION PORTFOLIO ==== */
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 94px;
+}
+
+/* .portfolio-item:not(:last-child) {
+  margin-bottom: 30px; */
+}
+/* ==== END COLLECTION PORTFOLIO ==== */
 
 /* ======= END PORFOLIO SECTION ======= */
