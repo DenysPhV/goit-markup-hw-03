@@ -74,6 +74,21 @@ img {
   padding-left: 15px;
   padding-right: 15px;
 }
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.section-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 /* =========== END COMPONENTS =========== */
 
 /* =========== HEADER ===========  */
@@ -178,6 +193,9 @@ img {
 
 .hero-title {
   color: var(--white-color);
+  width: 700px;
+  height: 160px;
+  margin: 0 auto;
 
   font-weight: 900;
   font-size: 44px;
@@ -185,8 +203,6 @@ img {
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
-
-  padding-top: 200px;
 }
 
 .btn-hero {
@@ -198,13 +214,14 @@ img {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-
   cursor: pointer;
-  margin-top: 30px;
-  margin-bottom: 200px;
+
+  display: block;
+  min-width: 200px;
+  margin: 30px auto 0px;
   padding: 10px 32px;
   border-radius: 4px;
-  border-color: none;
+  border: transparent;
 }
 
 .btn-hero:hover,
@@ -235,8 +252,11 @@ img {
 
 .advantage-list {
   display: flex;
-  margin-top: 94px;
-  margin-bottom: 94px;
+  margin-left: -30px;
+}
+
+.advantage-item {
+  margin-left: 30px;
 }
 
 /* ======== END ADVANTAGE SECTION ======== */
@@ -250,12 +270,19 @@ img {
   line-height: 1.17;
   text-align: center;
 
-  margin: 50px;
+  padding-top: 94px;
+  margin-bottom: 50px;
 }
 
 .passion-list {
   display: flex;
-  padding-bottom: 94px;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+
+.passion-item {
+  margin-left: 30px;
+  flex-basis: calc(100% / 3 - 30px)
 }
 /* ============ END PASSION SECTION ============ */
 
@@ -271,16 +298,17 @@ img {
   line-height: 1.17;
   text-align: center;
 
-  padding-top: 94px;
   margin-bottom: 50px;
 }
 
-.taem-name {
+.team-name {
   color: var(--color-conten);
 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+
+  margin-bottom: 10px;
 }
 
 .team-function {
@@ -290,9 +318,26 @@ img {
 
 .team-list {
   display: flex;
-  padding-bottom: 94px;
+  margin-left: -30px;
 }
 
+.team-item {
+  flex-basis: calc(100% / 3 - 30px);
+}
+
+.team-inner {
+    width: 270px;
+    padding: 30px 30px;
+    text-align: center;
+
+    border-right: solid 1px;
+    border-bottom: solid 1px;
+    border-left: solid 1px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-color: var(--border-color);
+}
+  
 /* ======== END TEAM SECTION ======== */
 
 /* ============ FOOTER ============= */
@@ -317,7 +362,6 @@ img {
 .footer-list {
   display: flex;
   flex-direction: column;
-  padding-bottom: 60px;
 }
 
 .footer-item:not(:last-child) {
@@ -327,7 +371,7 @@ img {
 /* обратился к ребенку в ссылку с логотипом */
 .container .footer-logo {
   display: flex;
-  padding-top: 60px;
+  padding-top: 0px;
   padding-bottom: 0px;
   margin-bottom: 20px;
 }
@@ -352,6 +396,7 @@ img {
 }
 
 .portfolio-inner {
+  width: 370px;
   padding: 20px 24px;
   border-right: solid 1px;
   border-bottom: solid 1px;
@@ -364,8 +409,10 @@ img {
   background-color: var(--light-gray);
   cursor: pointer;
 
+  min-width: 73px;
   padding: 6px 22px;
   border-radius: 4px;
+  border: transparent;
 }
 
 .btn-choose:hover,
@@ -377,7 +424,6 @@ img {
 .choose-list {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
   padding-bottom: 50px;
 }
 
@@ -391,7 +437,15 @@ img {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 94px;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+
+.portfolio-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-top: 30px;
+  margin-left: 30px;
 }
 
 /* .portfolio-item:not(:last-child) {
